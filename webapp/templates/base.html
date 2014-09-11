@@ -27,12 +27,10 @@
           <div id="banner" class="{{ homepage }}">
             <a href="{{ url_for('home') }}" title="Home">
             <!--
-              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="logo"
-                  x="0px" y="0px" width="232.816px" height="232.816px" viewBox="160.04 161.746 279.816 277.306" xml:space="preserve">
-
- xml:space="preserve"
-                viewBox="160.04 161.746 279.816 277.306" 
-
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                   id="logo" x="0px" y="0px" width="232.816px" height="232.816px"
+                   viewBox="160.04 161.746 279.816 277.306"
+                   xml:space="preserve">
             -->
             <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
                 xmlns:cc="http://creativecommons.org/ns#"
@@ -53,12 +51,6 @@
                            height="322"
                            />
                 </g>
-                <!-- 
-                <g id="hexagon"/>
-                  <polygon id="outer-hex" points="160.04,265.421 260.285,161.746 400.193,196.722 439.856,335.375 339.611,439.052 199.702,404.075"/>
-                  <polygon id="inner-hex" fill="#F5F5F5" points="325.479,397.39 228.719,371.006 203.187,274.014 274.417,203.408 371.182,229.792 396.708,326.783"/>
-                </g>
-                -->
               </svg>
             </a>
             <a href="{{ url_for('about') }}" {% if title == 'About' %} class="current" {% endif %}>
