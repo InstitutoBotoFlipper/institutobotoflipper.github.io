@@ -57,7 +57,7 @@ def about():
                            content=content[0], nav_items=nav_items)
 
 
-@app.route('/projects/')
+@app.route('/projetos/')
 def projects():
     content = [page for page in pages if
                page.meta['title'] == 'Projetos' if 'date' in page.meta]
