@@ -15,7 +15,7 @@ def sort_my_posts(posts):
     return sorted(posts, reverse=True, key=lambda page: page.meta['date'])
 
 ########## Assign Variables. ##########
-nav_items = ['Blog', 'Projetos', 'Arquivo',
+nav_items = ['Home', 'Blog', 'Projetos', 'Arquivo',
              ['GitHub', 'https://github.com/institutobotoflipper']]
 
 
@@ -28,6 +28,12 @@ def inject_copy_year():
 
 
 ########## Start assigning routes / views. ##########
+@app.route('/home/')
+def home_again():
+    return render_template('base.html', title='Home',
+                           nav_items=nav_items, homepage='homepage')
+
+
 @app.route('/')
 def home():
     return render_template('base.html', title='Home',
