@@ -15,7 +15,7 @@ def sort_my_posts(posts):
     return sorted(posts, reverse=True, key=lambda page: page.meta['date'])
 
 ########## Assign Variables. ##########
-nav_items = ['Home', 'Blog', 'Projetos', 'Arquivo', 'Historia']
+nav_items = ['Home', 'Blog', 'Projetos', 'Arquivo', u'História']
 
             # ['GitHub', 'https://github.com/institutobotoflipper']]
 
@@ -63,7 +63,7 @@ def about():
     return render_template('simple.html', title='Instituto Ambiental Boto Flipper',
                            content=content[0], nav_items=nav_items)
 
-@app.route('/historia/')
+@app.route(u'/história/')
 def historia():
     content = [page for page in pages if
                page.meta['title'] == u'Instituto Boto Flipper' if 'date' in page.meta]
