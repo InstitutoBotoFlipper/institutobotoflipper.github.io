@@ -41,4 +41,4 @@ FREEZER_REMOVE_EXTRA_FILES = False  #  IMPORTANT: If this is True, all app files
 FREEZER_RELATIVE_URLS = False  # change to False if on a server
 
 FLATPAGES_ROOT = os.path.join(APP_DIR, 'pages')
-FLATPAGES_EXTENSION = '.markdown'
+FLATPAGES_EXTENSION = '.md'
