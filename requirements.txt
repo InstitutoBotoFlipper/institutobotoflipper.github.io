@@ -1,7 +1,9 @@
 Flask==0.10.1
 ## The following requirements were added by pip --freeze:
+Flask-Misaka==0.4.1
 Flask-FlatPages==0.5
 Frozen-Flask==0.11
+slugify==0.0.1
 Jinja2==2.7.1
 Markdown==2.3.1
 MarkupSafe==0.18
