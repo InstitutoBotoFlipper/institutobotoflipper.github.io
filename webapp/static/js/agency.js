@@ -24,3 +24,10 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// Include function that directly opens url/#id
+$(document).ready(function() {
+    if (window.location.hash.length > 0) {
+	$(window.location.hash).click();
+	}
+	});

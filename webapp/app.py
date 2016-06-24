@@ -33,7 +33,8 @@ def index():
              page.path.startswith('blog') if 'date' in page.meta]
 
     for post in posts:
-        post.meta['stitle'] = slugify(post.meta['title'].replace(' ', '_'))
+        title = post.meta['title'].replace(' ', '_')
+        post.meta['stitle'] = slugify(unicode(title))
         post.meta['htitle'] = '#' + post.meta['stitle']
         post.meta['img_address'] = '../static/img/' + post.meta['pic']
     #  Sort pages by date
