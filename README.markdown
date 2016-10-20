@@ -1,28 +1,31 @@
 Instituto Ambiental Boto Flipper
 ================================
+Site developed to host information about the Non Governamental Organization - Instituto Boto Flipper
+[www.institutobotoflipper.org](http://www.institutobotoflipper.org)
 
-Flask powered website, forked from: [adamschwartz.io](http://adamschwartz.io/).
+Contribute with code
+====================
 
 # Project Setup
 
 ## Virtualenv
 * `sudo pip install virtualenv`
 * `cd my_flask_project`
-* `virtualenv venv`    
+* `virtualenv venv`
 
 ## Requirements
 Start by creating a requirements.txt file with following: (with each package on it's own line)
 
 * [Flask](http://flask.pocoo.org/)
 * [flask-flatpages](http://pythonhosted.org/Flask-FlatPages/)
-* [frozen-flask](https://pythonhosted.org/Frozen-Flask/)   
+* [frozen-flask](https://pythonhosted.org/Frozen-Flask/)
 
 Then install these packages into your virtual environment.
 
 * `venv/bin/pip install -r requirements.txt`
 * `ven/bin/pip freeze -r requirements.txt > requirements.txt`
 
-This replaces your limited requirements with a more complete 
+This replaces your limited requirements with a more complete
 list with correct version numbers for later use.
 
 ## Running
@@ -30,7 +33,7 @@ There are two options for running this flask webapp.
 
 You can run it as a dynamically generated server with `run.py`. Or, you can create a static version of your site with `freeze.py` that can be hosted anywhere.
 
-With either case, you need to ensure that you run the file with the correct python environment, in this case it's our virtualenv called 'venv'. 
+With either case, you need to ensure that you run the file with the correct python environment, in this case it's our virtualenv called 'venv'.
 
 We run them like this:
 
@@ -44,7 +47,9 @@ I like to set an alias in `.bash_profile` or `.bashrc` to make things easier.
 
     # virtualenv alias
     alias vpython="venv/bin/python"
-    
+
+## Flask powered website, forked from: [adamschwartz.io](http://adamschwartz.io/).
+
 # Helpful Tutorials
 - Steven Loria's [Hosting static Flask sites for free on Github Pages](http://stevenloria.com/hosting-static-flask-sites-for-free-on-github-pages/)
 - James Harding's [Build a Simple, Static, Markdown-Powered Blog with Flask](http://www.jamesharding.ca/posts/simple-static-markdown-blog-in-flask/)
